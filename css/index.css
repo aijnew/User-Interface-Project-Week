@@ -142,9 +142,36 @@ table {
 }
 html {
   font-size: 62.5%;
-  font-family: 'Roboto, Arial, sans-serif';
+  font-family: 'Roboto', 'Arial', sans-serif;
 }
 .container {
   max-width: 1024px;
   margin: 0 auto;
+}
+.nav-container .navigation {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: #828282;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 5%;
+}
+.nav-container .navigation .logo {
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  font-family: 'Notable', sans-serif;
+}
+.nav-container .navigation .nav-menu {
+  display: none;
+}
+h1 {
+  position: absolute;
+  bottom: 20px;
+  left: 13%;
+  z-index: 1;
+  font-weight: 800;
+  font-size: 6.4rem;
+  line-height: 7.5rem;
+  color: #FFFFFF;
 }
