@@ -1,10 +1,48 @@
-h1{
-    position: absolute;
-    bottom: 20px;
-    left: 13%;
-    z-index: 1;
-    font-weight: 800;
-    font-size: 6.4rem;
-    line-height: 7.5rem;
-    color: @white;
+.jumbo-div {
+    margin-bottom: 50px;
+    h1{
+        position: absolute;
+        bottom: 20px;
+        left: 13%;
+        z-index: 1;
+        font-weight: 800;
+        font-size: 6.4rem;
+        line-height: 7.5rem;
+        color: @white;
+    }
+}
+
+.smith {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    .smith-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 5%;
+        .btn {
+            .buttonstyle(@black, 15px, 100px);
+            
+            width: 93px;
+            height: 43px;
+        }
+    }
+}
+
+.future {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    .future-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .btn {
+            .buttonstyle(@black, 15px, 100px);
+            
+            width: 93px;
+            height: 43px;
+        }
+    }
 }
