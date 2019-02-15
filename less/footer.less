@@ -1,0 +1,44 @@
+.footer-container {
+    background: @grey;
+    padding-top: 70px;
+    
+    .footer {
+        padding: 0 5%;
+        
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+
+            @media @phone {
+                flex-direction: column;
+            }
+
+            .interested {
+                input {
+                    width: 100%;
+                    border-radius: 5px;
+                    padding: 10px;
+                }
+                h4{
+                    color: @white;
+                }
+            }
+
+            p {
+                color: @white;
+                font-size: 1.4rem;
+                line-height: 2.6rem;
+                font-weight: lighter;
+            }
+
+           
+        }
+        .copyright {
+            text-align: center;
+            color: @white;
+            @media @phone {
+                text-align: left;
+            }
+        }
+    }
+}
