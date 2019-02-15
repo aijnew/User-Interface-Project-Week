@@ -309,6 +309,11 @@ p {
   height: 43px;
 }
 @media (max-width: 500px) {
+  .future .future-text .btn {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
   .design-img img {
     width: 100%;
     height: auto;
@@ -347,6 +352,22 @@ p {
   padding: 25px 50px;
   border: 1px solid #FFFFFF;
   display: inline-block;
+}
+.recent .project-item .project-header .desktop {
+  display: block;
+}
+@media (max-width: 500px) {
+  .recent .project-item .project-header .desktop {
+    display: none;
+  }
+}
+.recent .project-item .project-header .mobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  .recent .project-item .project-header .mobile {
+    display: block;
+  }
 }
 .recent .project-item .villas h3 {
   right: 0;
