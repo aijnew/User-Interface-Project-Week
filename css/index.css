@@ -1,6 +1,6 @@
 /* Your Code Goes Here */
 html {
-  background-color: red;
+  background-color: #FFFFFF;
 }
 /*------------------------------------*\
 RESET
@@ -144,6 +144,12 @@ html {
   font-size: 62.5%;
   font-family: 'Roboto', 'Arial', sans-serif;
 }
+h4 {
+  font-weight: regular;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #FFFFFF;
+}
 h3 {
   font-weight: bold;
   font-size: 2.8rem;
@@ -180,6 +186,27 @@ p {
 }
 .jumbo-div {
   margin-bottom: 50px;
+}
+.jumbo-div .desktop {
+  display: block;
+}
+.jumbo-div .mobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  .jumbo-div .desktop {
+    display: none;
+  }
+  .jumbo-div .mobile {
+    display: block;
+  }
+}
+.jumbo-div img {
+  width: 100%;
+  height: auto;
+}
+.jumbo-div .jumbotron {
+  position: relative;
 }
 .jumbo-div h1 {
   position: absolute;
@@ -286,6 +313,7 @@ p {
   color: #FFFFFF;
   font-size: 1.4rem;
   line-height: 2.6rem;
+  font-weight: lighter;
 }
 .footer-container .footer .copyright {
   text-align: center;

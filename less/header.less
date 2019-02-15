@@ -1,5 +1,28 @@
 .jumbo-div {
     margin-bottom: 50px;
+    .desktop {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+
+    @media @phone {
+        .desktop {
+            display: none;
+        }
+        .mobile {
+            display: block;
+        }
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .jumbotron {
+        position: relative;
+    }
     h1{
         position: absolute;
         bottom: 20px;
