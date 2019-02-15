@@ -9,6 +9,10 @@
             display: flex;
             justify-content: space-between;
 
+            @media @phone {
+                flex-direction: column;
+            }
+
             .interested {
                 input {
                     width: 100%;
@@ -32,6 +36,9 @@
         .copyright {
             text-align: center;
             color: @white;
+            @media @phone {
+                text-align: left;
+            }
         }
     }
 }

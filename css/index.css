@@ -222,11 +222,25 @@ p {
   justify-content: space-between;
   padding: 0 5%;
 }
+@media (max-width: 500px) {
+  .smith {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .smith .smith-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-right: 5%;
+}
+@media (max-width: 500px) {
+  .smith .smith-text {
+    order: 1;
+  }
+}
+.smith .smith-text p {
+  margin: 0 10px;
 }
 .smith .smith-text .btn {
   border: 1px solid #222222;
@@ -234,10 +248,45 @@ p {
   width: 93px;
   height: 43px;
 }
+@media (max-width: 500px) {
+  .smith .smith-text .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .intro-img img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+.intro-img .mobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  .intro-img .mobile {
+    display: block;
+  }
+}
+.intro-img .desktop {
+  display: block;
+}
+@media (max-width: 500px) {
+  .intro-img .desktop {
+    display: none;
+  }
+}
 .future {
   display: flex;
   justify-content: space-between;
   padding: 0 5%;
+}
+@media (max-width: 500px) {
+  .future {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .future .future-text {
   display: flex;
@@ -247,11 +296,40 @@ p {
   padding-left: 10%;
   order: 1;
 }
+@media (max-width: 500px) {
+  .future .future-text {
+    order: 1;
+    padding-left: initial;
+  }
+}
 .future .future-text .btn {
   border: 1px solid #222222;
   padding: 15px 100px;
   width: 93px;
   height: 43px;
+}
+@media (max-width: 500px) {
+  .design-img img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+.design-img .mobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  .design-img .mobile {
+    display: block;
+  }
+}
+.design-img .desktop {
+  display: block;
+}
+@media (max-width: 500px) {
+  .design-img .desktop {
+    display: none;
+  }
 }
 .recent {
   padding: 0 5%;
@@ -301,6 +379,11 @@ p {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .footer-container .footer .footer-top {
+    flex-direction: column;
+  }
+}
 .footer-container .footer .footer-top .interested input {
   width: 100%;
   border-radius: 5px;
@@ -318,4 +401,9 @@ p {
 .footer-container .footer .copyright {
   text-align: center;
   color: #FFFFFF;
+}
+@media (max-width: 500px) {
+  .footer-container .footer .copyright {
+    text-align: left;
+  }
 }

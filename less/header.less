@@ -23,6 +23,7 @@
     .jumbotron {
         position: relative;
     }
+
     h1{
         position: absolute;
         bottom: 20px;
@@ -38,11 +39,94 @@
     display: flex;
     justify-content: space-between;
     padding: 0 5%;
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+    }
+
     .smith-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding-right: 5%;
+        @media @phone {
+            order: 1;
+
+        }
+        p {
+            margin: 0 10px;
+        }
+
+        .btn {
+            @media @phone {
+                width: 100%;
+                text-align: center;
+            }
+            .buttonstyle(@black, 15px, 100px);
+            
+            width: 93px;
+            height: 43px;
+        }
+    }
+    
+}
+
+.intro-img {
+    img {
+        @media @phone {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+         
+        }
+        
+    }
+    .mobile {
+        display: none;
+
+        @media @phone {
+            display: block;
+        }
+    }
+
+    .desktop {
+        display: block;
+
+        @media @phone {
+            display: none;
+        }
+    }
+}
+
+
+
+.future {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+
+    
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .future-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 10%;
+        padding-left: 10%;
+        //flip the div order with order
+        order: 1;
+
+        @media @phone {
+            order: 1;
+            padding-left: initial;
+            
+        }
+
         .btn {
             .buttonstyle(@black, 15px, 100px);
             
@@ -52,26 +136,30 @@
     }
 }
 
-.future {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 5%;
-    .future-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-right: 10%;
-        padding-left: 10%;
-        //flip the div order with order
-        order: 1;
-        .btn {
-            .buttonstyle(@black, 15px, 100px);
-            
-            width: 93px;
-            height: 43px;
+.design-img {
+    img {
+        @media @phone {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    }
+    .mobile {
+        display: none;
+
+        @media @phone {
+            display: block;
+        }
+    }
+    .desktop {
+        display: block;
+
+        @media @phone {
+            display: none;
         }
     }
 }
+
 
 .recent {
     padding: 0 5%;
