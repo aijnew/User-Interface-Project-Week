@@ -144,6 +144,19 @@ html {
   font-size: 62.5%;
   font-family: 'Roboto', 'Arial', sans-serif;
 }
+h3 {
+  font-weight: bold;
+  font-size: 2.8rem;
+  color: #222222;
+}
+h2 {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
 .container {
   max-width: 1024px;
   margin: 0 auto;
@@ -172,8 +185,7 @@ html {
   position: absolute;
   bottom: 20px;
   left: 13%;
-  z-index: 1;
-  font-weight: 800;
+  font-weight: bold;
   font-size: 6.4rem;
   line-height: 7.5rem;
   color: #FFFFFF;
@@ -204,10 +216,50 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-right: 10%;
+  padding-left: 10%;
+  order: 1;
 }
 .future .future-text .btn {
   border: 1px solid #222222;
   padding: 15px 100px;
   width: 93px;
   height: 43px;
+}
+.recent {
+  padding: 0 5%;
+}
+.recent .project-item .project-header {
+  position: relative;
+  margin-bottom: 80px;
+}
+.recent .project-item .project-header img {
+  width: 100%;
+}
+.recent .project-item .project-header h3 {
+  position: absolute;
+  background: #828282;
+  padding: 25px 50px;
+  border: 1px solid #FFFFFF;
+  display: inline-block;
+}
+.recent .project-item .villas h3 {
+  right: 0;
+  bottom: -50px;
+}
+.recent .project-item .outskirts h3 {
+  left: 0;
+  bottom: -50px;
+}
+.recent .project-item .blocks h3 {
+  right: 0;
+  bottom: -50px;
+}
+.recent .project-item .bottom-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recent .project-item .bottom-text p {
+  width: 400px;
 }

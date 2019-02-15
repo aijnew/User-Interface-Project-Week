@@ -4,8 +4,7 @@
         position: absolute;
         bottom: 20px;
         left: 13%;
-        z-index: 1;
-        font-weight: 800;
+        font-weight: bold;
         font-size: 6.4rem;
         line-height: 7.5rem;
         color: @white;
@@ -38,11 +37,57 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding-right: 10%;
+        padding-left: 10%;
+        //flip the div order with order
+        order: 1;
         .btn {
             .buttonstyle(@black, 15px, 100px);
             
             width: 93px;
             height: 43px;
+        }
+    }
+}
+
+.recent {
+    padding: 0 5%;
+    .project-item {
+        .project-header {
+            position: relative;
+            margin-bottom: 80px;
+            img {
+                width: 100%;
+            }
+            h3 {
+                position: absolute;
+                background: @grey;
+                padding: 25px 50px;
+                border: 1px solid @white;
+                display: inline-block;
+            }
+            
+        }
+        .villas h3 {
+            right: 0;
+            bottom: -50px;
+        }
+        .outskirts h3 {
+            left: 0;
+            bottom: -50px;
+        }
+        .blocks h3 {
+            right: 0;
+            bottom: -50px;
+        }
+        
+        .bottom-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p {
+                width: 400px;
+            }
         }
     }
 }
