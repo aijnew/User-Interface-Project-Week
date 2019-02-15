@@ -263,3 +263,31 @@ p {
 .recent .project-item .bottom-text p {
   width: 400px;
 }
+.footer-container {
+  background: #828282;
+  padding-top: 70px;
+}
+.footer-container .footer {
+  padding: 0 5%;
+}
+.footer-container .footer .footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-container .footer .footer-top .interested input {
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+}
+.footer-container .footer .footer-top .interested h4 {
+  color: #FFFFFF;
+}
+.footer-container .footer .footer-top p {
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+}
+.footer-container .footer .copyright {
+  text-align: center;
+  color: #FFFFFF;
+}
